@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>  My Page </title>  
+<style>
+    
+    img{
+        width: 100%;
+        height: 650px;
+        background-position: left ;
+    }
+    
+    
+    
+    .up{
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        height: 60px;
+        left: 0px;
+        z-index: 100;
+        box-shadow: 0 0 1px 1px ;
+        margin: 0px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: cursive;
+        box-shadow: 0 0 4px 4px;
+
+        
+    }    
+    
+    .link li{
+        color: red;
+        display: inline;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 40px;
+        box-shadow: 2px 1px 1px 2px;
+    }
+    
+   
+    
+     a{
+        text-decoration: none;
+    }
+   
+    
+    
+    
+    
+    #bt1{
+        
+        background-color: gray;
+    }
+    #bt2{
+        background-color: gray;
+    }
+    #bt3{
+        background-color: gray;
+    }
+    
+    #bt4{
+        background-color: gray;
+    }
+    
+    
+    .h{
+        width: 100%;
+        height: 110px;
+        color: #7b7070;
+        text-align:left;
+        position: absolute;
+        top:50px;
+        left: 10px;
+        margin: 0px;
+    }
+    
+    P{
+        font-size: 25px;
+        font-family: fantasy;
+    }
+    
+    
+       
+    
+    
+    .h2{
+        width: 100%;
+        height: 300px;
+        color: #223;
+        text-align: left;
+        position: absolute;
+        top: 100px;
+        left:10px;
+        margin: 0px;
+    }
+    
+    h{
+        font-size: 80px;
+        font-weight: bolder;
+        font-family: cursive;
+    }
+    
+    
+    .btn{
+        width: 100%;
+        height: 270px;
+        text-align:right ;
+        position: absolute;
+        top:100px;
+        
+    }
+    
+    .btn1{
+        border: 1px solid black;
+        font-size: 20px;
+        font-family: "montserrat";
+        cursor: pointer;
+        border-radius: 70px;
+        background: #c3d1d6;
+        box-shadow: 0 0 1px 1px;
+    }
+    
+    a:visited{
+        color: black;
+    }
+    a:active{
+       color: darkblue;
+    }
+   
+   
+     #i{
+        width: 180px; 
+        height: 180px;
+        position:relative;
+        left: 750px;
+         top: 350px;
+    }
+    
+    
+</style>    
+    
+    
+    
+</head>
+
+<body>
+    
+<img src="ph.jpg"  class="pho"   /> 
+    
+    
+<div class="up">    
+    
+    
+    
+<div  class="link">
+    
+<ul>
+    <li id="bt1"><a href="qusai1.html#case1"> ABOUT  ME </a></li>   
+    <li id="bt2"><a href="qusai1.html#case2"> SKILLS  </a> </li>  
+    <li id="bt3"><a href="qusai1.html#case3"> SERVICES</a> </li> 
+    <li id="bt4"><a href="qusai1.html#case4"> CONTACT </a> </li>   
+</ul>    
+
+ </div>  
+ </div>
+    
+<div class="h">
+    
+<img  id="i" src="logo3.png"  onmouseover="move1();"
+     onmouseout="clearTimeout(myI);" /> 
+</div> 
+<div class="h2">
+<h>&nbsp; QUSAI</h><br>  
+<h>&nbsp; AL-OMARI </h> <br><br>
+<h id="ha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Front End Web Developer.  </h>  
+</div>  
+<br>
+    
+    <div class=btn>
+        <button class="btn1"> <a href="qusai1.html"> Next</a></button>    
+    </div>
+   
+    
+    
+    
+<script>
+    
+var  myI; 
+    
+function move1() {
+    window.i.style.left = 3;
+    window.i.style.top = 3; 
+    myI = setTimeout(move2, 10);
+}
+    function move2() {
+    window.i.style.top = 0; 
+    window.i.style.left = 0;
+   myI = setTimeout(move1, 10);    
+}
+
+var val = 0;
+var myH = setInterval(function() {
+    window.ha.style.fontSize = val++;
+    if(val > 30) {
+        clearInterval(myH);
+    }
+}, 15);
+
+    
+</script>    
+    
+    
+</body>
+
+
+
+
+
+</html>
